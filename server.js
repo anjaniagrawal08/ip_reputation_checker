@@ -2,7 +2,8 @@
 const axios = require('axios');
 const express = require('express');
 const bodyParser = require('body-parser');
-const fetch = require('node-fetch');
+//const fetch = require('node-fetch');
+const fetch = require('fetch');
 const cors = require('cors');
 const dns = require('dns').promises;
 const { getFrequencyScore } = require('./Abuse/frequency');
