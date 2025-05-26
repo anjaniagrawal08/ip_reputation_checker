@@ -17,8 +17,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // AbuseIPDB API key (ensure you keep it safe)
-const API_KEY = 'e5dc4fa84a41991bf991dae6e02d5e1ac70804151c8dca898e556eacbb815e57fe3ad41e9c159f14';
-const NINJA_API_KEY = 'GpDBeTgn5WUKFzvv0r+2qw==790UZE60npeFI78W'
+const API_KEY = process.env.ABUSE_API_KEY;
+const NINJA_API_KEY = process.env.NINJA_API_KEY;
 // IPv4 validation regex
 function isValidIPv4(ip) {
   const ipv4Regex = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
