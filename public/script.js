@@ -12,7 +12,7 @@ async function checkIP() {
   const body = isIP ? { ip: ip } : { domain: ip };
 
   try {
-    const response = await fetch('https://ip-reputation-checker-r9yu.onrender.com/check', {
+    const response = await fetch('/check', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body)
