@@ -15,6 +15,8 @@ const PORT = 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static('public'));
+
 
 // AbuseIPDB API key (ensure you keep it safe)
 const API_KEY = process.env.API_KEY;
