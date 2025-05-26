@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // AbuseIPDB API key (ensure you keep it safe)
-const API_KEY = process.env.ABUSE_API_KEY;
+const API_KEY = process.env.API_KEY;
 const NINJA_API_KEY = process.env.NINJA_API_KEY;
 // IPv4 validation regex
 function isValidIPv4(ip) {
